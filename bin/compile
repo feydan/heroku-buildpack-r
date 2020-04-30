@@ -252,7 +252,7 @@ if [[ -f "$BUILD_DIR/Aptfile" ]]; then
   done < "$BUILD_DIR/Aptfile"
 
   fakechroot fakeroot chroot $CHROOT_DIR \
-    add-apt-repository -y ppa:ubuntugis/ubuntugis-unstable > /dev/null
+    add-apt-repository -y ppa:ubuntugis/ubuntugis-unstable
 
   fakechroot fakeroot chroot $CHROOT_DIR \
     apt-get update > /dev/null
